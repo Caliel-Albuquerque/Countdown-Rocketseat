@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Espere mais um pouco</title>
+    
+    </head>
+
+    <body>
+        
+        <div class="Container">
+
+            <img class="TopSvg" src="./Assets/top-image.svg" alt="">
+            <img class="BottomSvg" src="./Assets/bottom-image.svg" alt="">
+
+
+            <div class="ContentCountdown">
+
+                <h1 class="TitleCountdown">Ready To Launch in...</h1>
+
+                <div class="Countdown">
+
+                    <div class="CountdownElementsDays">
+                        <span>dias</span>
+                        <p class="text" id="dias">0</p>
+                    </div>
+                   
+                    <div class="CountdownElementsHours">
+                        <span>horas</span>
+                        <p class="text" id="horas">0</p>
+                    </div>
+                   
+                    <div class="CountdownElementsMinutes">
+                        <span>minutos</span>
+                        <p class="text" id="minutos">0</p>
+                    </div><br> 
+                    
+                    <div class="CountdownElementsSeconds">
+                        <span>segundos</span>
+                        <p class="text" id="segundos">0</p>
+                    </div>
+
+                </div>
+
+               <p class="TextCountdown">Inscreva-se para saber mais sobre o lançamento</p>
+
+               <button onclick="openModal()">Inscreva-se</button>
+
+            </div>
+
+            <div class="ContentImage">
+
+
+            </div>
+
+            <div class="modalContainer" id="modalDisplay">
+
+                <button class="btnCloseIcon" id="closeIcon" onclick="closeModal()"><img src="./Assets/close-icon.svg" alt=""></button>
+
+                <h2 class="titleModal">Não perca essa lançamento</h2>
+
+                <div class="capture">
+
+                    <input type="text" name="" id="" placeholder="Seu nome">
+                    <input type="email" name="" id="" placeholder="Seu email">
+
+                    <button class="SendEmail">Enviar</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="./app.js"></script>
+
+            
+
+        <script>
+
+            const modal = document.getElementById("modalDisplay");
+            const iconClose = document.getElementById("modalDisplay");
+         
+          function openModal() {
+
+                const newModal = modal.style.display = "block";
+
+            }
+
+          function closeModal() {
+
+            const eventModalClose = iconClose.style.display = "none";
+
+          }   
+
+
+        </script>
+    </body>
+</html>
